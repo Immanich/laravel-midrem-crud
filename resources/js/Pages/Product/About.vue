@@ -4,12 +4,15 @@ import NavBar from '@/Components/NavBar.vue'
 
 </script>
 
+
 <template>
 
     <Head title="Landing Page" />
 
     <NavBar />
-
-    <h1 class="p-32 align-center justify-center container">Home</h1>
-
+    <div class="p-32 align-center justify-center container">
+        <div class=" p-8">
+            <h1>About us</h1>
+        </div>
+    </div>
 </template>

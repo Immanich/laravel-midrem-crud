@@ -26,9 +26,13 @@ use Inertia\Inertia;
 // });
 
 Route::get('/', function(){
-    return inertia('Landing');
+    return inertia('L   anding');
 });
 
+Route::get('/products/create', [ProductController::class, 'create']);
+Route::post('/products', [ProductController::class, 'store']);
 Route::get('/products',[ProductController::class,'index']);
+Route::get('/products/pdf',[ProductController::class,'pdf']);
+Route::get('/about',[ProductController::class,'about']);
 
 require __DIR__.'/auth.php';
